@@ -55,4 +55,3 @@ If you have any questions or suggestions regarding the Echolon Inventory System,
 ![UI Suppliers](https://github.com/EXDEICIDA/Inventory-System/raw/main/EcholonAppPictures/U_Supliers.png)
 *Image Description: Screenshot of the Suppliers User Interface.*
 
--
