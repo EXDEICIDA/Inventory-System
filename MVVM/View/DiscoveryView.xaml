@@ -1,0 +1,101 @@
+﻿<UserControl
+    x:Class="ModernDesign.MVVM.View.DiscoveryView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:ModernDesign.MVVM.View"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModels="clr-namespace:ModernDesign.MVVM.ViewModel"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Background="#1B1B1B"
+    mc:Ignorable="d">
+    <UserControl.DataContext>
+        <viewModels:DiscoveryViewModel />
+    </UserControl.DataContext>
+    <Grid>
+        <!--  StackPanel for CRUD Operation Buttons  -->
+        <StackPanel
+            Margin="0,2,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Orientation="Horizontal">
+            <!--  Add Button  -->
+            <Button
+                Width="100"
+                Height="30"
+                Margin="5"
+                Command="{Binding AddCommand}"
+                Content="Add" />
+            <!--  Delete Button  -->
+            <Button
+                Width="100"
+                Height="30"
+                Margin="5"
+                Command="{Binding DeleteCommand}"
+                Content="Delete" />
+            <!--  Edit Button  -->
+            <Button
+                Width="100"
+                Height="30"
+                Margin="5"
+                Command="{Binding EditCommand}"
+                Content="Edit" />
+        </StackPanel>
+
+        <!--  DataGrid  -->
+        <DataGrid
+            Name="dgProducts"
+            Margin="0,44,0,0"
+            AlternatingRowBackground="#2D2D30"
+            AutoGenerateColumns="False"
+            Background="#2D2D30"
+            BorderBrush="#007ACC"
+            BorderThickness="1"
+            ColumnHeaderHeight="32"
+            Foreground="WhiteSmoke"
+            GridLinesVisibility="None"
+            HorizontalGridLinesBrush="#333337"
+            IsReadOnly="False"
+            ItemsSource="{Binding Products}"
+            RowBackground="#333337"
+            SelectedItem="{Binding SelectedProduct}"
+            SelectionMode="Single"
+            SelectionUnit="FullRow"
+            VerticalGridLinesBrush="#333337">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#3C3C3F" />
+                    <Setter Property="Foreground" Value="WhiteSmoke" />
+                    <Setter Property="Height" Value="32" />
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding SKU_ID}"
+                    Header="SKU ID" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Name}"
+                    Header="Name" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Price}"
+                    Header="Price" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Description}"
+                    Header="Description" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Quantity}"
+                    Header="Quantity" />
+                <DataGridTextColumn
+                    Width="*"
+                    Binding="{Binding Category}"
+                    Header="Category" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</UserControl>
