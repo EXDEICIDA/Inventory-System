@@ -40,7 +40,7 @@ To run the Echolon Inventory System locally, follow these steps:
 
 ## License
 
-The Echolon Inventory System is licensed under the MIT License. See the [MIT](LICENSE) file for details.
+The Echelon Inventory System is licensed under the MIT License. See the [MIT](LICENSE) file for details.
 
 ## Contact
 
