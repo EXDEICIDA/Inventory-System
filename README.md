@@ -1,11 +1,11 @@
-# Echolon Inventory System
+# Echelon Inventory System
 
 ![UI Inventory](https://github.com/EXDEICIDA/Inventory-System/raw/main/EcholonAppPictures/UI_Inventory.png)
 *Image Description: Screenshot of the Inventory User Interface.*
 
 ## Overview
 
-The Echolon Inventory System is a comprehensive solution for managing inventory efficiently. This repository contains the source code for the system, including details on the technologies used, installation instructions, and how to contribute.
+The Echelon Inventory System is a comprehensive solution for managing inventory efficiently. This repository contains the source code for the system, including details on the technologies used, installation instructions, and how to contribute.
 
 ## Technologies Used
 
@@ -44,7 +44,7 @@ The Echolon Inventory System is licensed under the MIT License. See the [MIT](LI
 
 ## Contact
 
-If you have any questions or suggestions regarding the Echolon Inventory System, please feel free to contact us at [javadsoltano@gmail.com](mailto:email@example.com).
+If you have any questions or suggestions regarding the Echelon Inventory System, please feel free to contact us at [javadsoltano@gmail.com](mailto:email@example.com).
 
 ![UI MainPage](https://github.com/EXDEICIDA/Inventory-System/raw/main/EcholonAppPictures/UI_MainPage.png)
 *Image Description: Screenshot of the Main Page User Interface.*
